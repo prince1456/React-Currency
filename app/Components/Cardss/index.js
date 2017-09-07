@@ -1,4 +1,4 @@
-import Cardss from "./Card"
+import Cardss from "./Cardss"
 import styles from "./styles"
 
 

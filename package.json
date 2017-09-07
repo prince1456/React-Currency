@@ -25,6 +25,7 @@
   "dependencies": {
     "@expo/vector-icons": "^5.1.0",
     "color": "^2.0.0",
+    "disable-react-devtools": "^1.0.0",
     "expo": "^20.0.0",
     "moment": "^2.18.1",
     "react": "16.0.0-alpha.12",

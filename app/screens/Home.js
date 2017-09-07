@@ -5,9 +5,10 @@ import { StatusBar, KeyboardAvoidingView } from 'react-native';
 import { Container } from '../Components/Container';
 import { Logo } from '../Components/Logo';
 import { InputWithButton } from '../Components/TextInput';
-import {ClearButton} from "../Components/Buttons"
-import {LastConverted} from '../Components/Text'
-import {Header} from "../Components/Header"
+import {ClearButton} from "../Components/Buttons";
+import {LastConverted} from '../Components/Text';
+import {Header} from "../Components/Header";
+
 
 const TEMP_BASE_CURRENCY = 'USD'
 const TEMP_QOUTE_CURRENCY = 'GBP'
@@ -40,16 +41,16 @@ class Home extends Component {
                   <Logo />
                   <InputWithButton
                     buttonText={TEMP_BASE_CURRENCY}
-                    onPress={this.handlePressQouteCurrency}
+                    onPress={this.handlePressBaseCurrency}
                     defaultValue={TEMP_BASE_PRICE}
-                    keyboardType= "numeric"
-                    onchangeText={ this.handleTextChange}
+                    keyboardType="numeric"
+                    onChangeText={this.handleChangeText}
                   />
                   <InputWithButton
+                    editable={false}
                     buttonText={TEMP_QOUTE_CURRENCY}
-                    onPress={this.handlePressQouteCurrency}
-                    editable= {false}
-                    value= {TEMP_QOUTE_PRICE}
+                    onPress={this.handlePressQuoteCurrency}
+                    value={TEMP_QOUTE_PRICE}
                   />
                   <LastConverted
                   base={TEMP_BASE_CURRENCY}
